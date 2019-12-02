@@ -1,24 +1,25 @@
-# README
+chat_app
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Overview
 
-Things you may want to cover:
+## Description
+A chat app like line. Basic functions include user registration, login, chat posting, and chat display.
 
-* Ruby version
+## Demo
 
-* System dependencies
+## VS. 
 
-* Configuration
+## Requirement
 
-* Database creation
+## Usage
 
-* Database initialization
+## Install
 
-* How to run the test suite
+## Contribution
 
-* Services (job queues, cache servers, search engines, etc.)
+## Licence
 
-* Deployment instructions
+## Author
 
-* ...
+[souenxx](https://github.com/souenxx)
