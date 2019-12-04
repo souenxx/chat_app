@@ -1,14 +1,10 @@
-<% if logged_in? %>
-  <h1>Chat Room</h1>
-  <%= link_to "Log out",logout_path,method: :delete %>
-  <input type="text" id="chat-input" />
-  <button id="button">送信</button>
-  <div class="line-bc">
-    <div id="messages">
-      <%= render @messages%>
-　  </div>
-  </div>
-<% else %>
-  <%= link_to "Sign up",signup_path %>
-  <%= link_to "Log in",login_path %>
-<% end %>
+  <% if logged_in? %>
+    <div class="line-bc">
+      <div id="messages">
+        <%= render @messages%>
+　     </div>
+    </div>
+  <% else %>
+    <%= link_to "Sign up",signup_path %>
+    <%= link_to "Log in",login_path %>
+  <% end %>

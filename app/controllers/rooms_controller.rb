@@ -1,5 +1,9 @@
 class RoomsController < ApplicationController
   def show
-    @messages = Message.last(10)
+    unless logged_in?
+      session[:callback]=root_path
+      return redirect_to login_path
+    end
+    @messages = Message.all
   end
 end
