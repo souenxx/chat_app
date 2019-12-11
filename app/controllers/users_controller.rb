@@ -29,4 +29,9 @@ class UsersController < ApplicationController
     def login_required
       redirect_to login_path unless current_user
     end
+    
+    def correct_user
+      @user=User.find(params[:id])
+      redirect_to(root_url) unless @user == current_user
+    end
 end

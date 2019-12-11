@@ -1,9 +1,8 @@
 class RoomsController < ApplicationController
   def show
-    unless logged_in?
-      session[:callback]=root_path
-      return redirect_to login_path
+    if logged_in?
+      #@message=current_user.messages.build
+      @messages = Message.all
     end
-    @messages = Message.all
   end
 end

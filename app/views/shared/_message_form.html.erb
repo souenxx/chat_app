@@ -1,0 +1,26 @@
+<%
+=begin 
+%>
+<%= form_for(@message,url: messages_path) do |f| %>
+  <%= render 'shared/error_messages',object: f.object %>
+  <section class="field">
+    <%= f.text_area :content, placeholder: "こんにちは..." %>
+  </section>
+    <%= f.submit "送信",class: "btn btn-primary" %>
+<% end %>
+
+<%
+=begin 
+%>
+<%= form_tag("/messages/create") do %>
+    <input message="message" value="<%= @message.content %>">
+    <input type="submit" value="新規登録">
+<% end %><%
+=end 
+%>
+  <form class="form-inline">
+    <div class="form-group">
+      <input type="text" class="form-control" id="chat-input" />
+    </div>
+    <button id="button" class="btn btn-primary">送信</button>
+  </form>

@@ -27,10 +27,13 @@
 			  </ul>
 			  <% if current_page?(root_url) %>
 			  <form class="navbar-form navbar-right">
+			  	<%= render 'shared/message_form' %>
+			  	<!--
 				  <div class="form-group">
 					  <input type="text" id="chat-input" class="form-control">
 				  </div>
 				  <button type="submit" id="button" class="btn btn-default">送信</button>
+			    -->
 			  </form>
 			  <% end %>
 			<% end %>

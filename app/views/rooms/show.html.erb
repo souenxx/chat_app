@@ -5,6 +5,9 @@
 　     </div>
     </div>
   <% else %>
-    <%= link_to "Sign up",signup_path %>
-    <%= link_to "Log in",login_path %>
+    <div class="center jumbotron text-center" style="background-color:#33FF33;">
+      <h1 style="color:white">Welcome to the Chat App</h1>
+      <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-default" %>
+    </div>
+
   <% end %>
