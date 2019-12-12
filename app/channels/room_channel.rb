@@ -1,5 +1,4 @@
 class RoomChannel < ApplicationCable::Channel
-  include SessionsHelper
   
   
   def subscribed
@@ -12,7 +11,7 @@ class RoomChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-    message = Message.create!(content: data['message'])
+    message = Message.create!(content: data['message'],user_id: current_user.id)
     template = ApplicationController.renderer.render(partial: 'messages/message', locals: {message: message})
     ActionCable.server.broadcast 'room_channel', template
     #ActionCable.server.broadcast 'room_channel', {name: current_user.name, content: data['message']}

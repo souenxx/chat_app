@@ -7,5 +7,16 @@ class User < ApplicationRecord
              format:{with: VALID_EMAIL_REGEX},
              uniqueness: {case_sensitive: false}
   has_secure_password
+  mount_uploader :picture, PictureUploader
   validates :password, presence: true,length:{minimum:6}
+  validate :picture_size
+  
+  private
+    #アップロードする画像サイズを制限
+    def picture_size
+      if picture.size > 5.megabytes
+        errors.add(:picture, "should be less than 5MB")
+      end
+    end
+  
 end

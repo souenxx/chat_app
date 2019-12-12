@@ -1,10 +1,7 @@
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= @user.name %>
-        <%= link_to "チャット",root_url %>
-      </h1>
-    </section>
-  </aside>
+<div>
+  <h1 class="text-center">
+    <%= image_tag @user.picture.url if @user.picture? %>
+    <%= @user.name %>
+    <%= link_to "chat start!",root_url,method: :get %>
+  </h1>
 </div>
