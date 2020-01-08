@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
-  before_action :login_required, only:[:show]
+  before_action :login_required, only:[:show,:update,:index]
 
+  def index
+    @users=User.all
+  end
   
   def new
     @user=User.new
@@ -12,6 +15,8 @@ class UsersController < ApplicationController
   
   def create
     @user=User.new(user_params)
+    #@user.picture = "ahiru.png"
+    
     if @user.save
       log_in @user
       flash[:success] = "Chat APPへようこそ"
@@ -23,6 +28,7 @@ class UsersController < ApplicationController
   
   def edit
     @user=User.find(params[:id])
+    #@user.picture="kid.png"
   end
   
   def update

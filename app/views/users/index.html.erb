@@ -1,0 +1,14 @@
+<h1 class="text-center">All users</h1>
+
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <% if user.picture? %>
+        <%= image_tag user.picture.url %>
+      <% else %>
+        <%= image_tag("ahiru.png",:size => "180x180") %>
+      <% end %>
+      <%= user.name %>
+    </li>
+  <% end %>
+</ul>
