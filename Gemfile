@@ -33,7 +33,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'carrierwave','1.2.2'
 gem 'mini_magick','4.7.0'
-#gem 'fog','1.42'
+gem 'fog'
 gem 'fog-aws'
 
 # Use Capistrano for deployment
