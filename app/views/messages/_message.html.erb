@@ -5,7 +5,7 @@
 <% else %>
   <div class="balloon6">
     <div class="faceicon">
-      <% if message.user.picture?>
+      <% if message.user.picture? %>
         <%= image_tag message.user.picture.url %>
       <% else %>
         <%= image_tag "ahiru.png" %>
