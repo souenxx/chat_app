@@ -22,3 +22,22 @@ input {
 .container-fluid{
   background: #FFFFFF;
 }
+
+/* Users index */
+.users{
+  list-style: none;
+  margin: 0;
+  li{
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+    .usersicon{
+      display: inline-block;
+      position: relative;
+    }
+    .usersname{
+      display: inline-block;
+      margin: 0 0 0 50px;
+    }
+  }
+}

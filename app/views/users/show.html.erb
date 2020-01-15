@@ -1,11 +1,13 @@
 <div>
   <h1 class="text-center">
+    <div>
     <% if @user.picture? %>
       <%= image_tag @user.picture.url %>
     <% else %>
       <%= image_tag("ahiru.png",:size => "200x200") %>
     <% end %>
-    <%= @user.name %>
-    <%= link_to "chat start!",root_url,method: :get %>
+    </div>
+    <div><%= @user.name %></div>
+    <div><%= link_to "chat start!",root_url,method: :get,class:'btn btn-success btn-lg' %></div>
   </h1>
 </div>

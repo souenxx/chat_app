@@ -1,14 +1,19 @@
 <h1 class="text-center">All users</h1>
 
+<%= will_paginate %>
 <ul class="users">
   <% @users.each do |user| %>
     <li>
+      <div class="usersicon">
       <% if user.picture? %>
-        <%= image_tag user.picture.url %>
+        <%= image_tag(user.picture.url,:size => "100x100") %>
       <% else %>
-        <%= image_tag("ahiru.png",:size => "200x200") %>
+        <%= image_tag("ahiru.png",:size => "100x100") %>
       <% end %>
-      <%= user.name %>
+      </div>
+      <div class="usersname"><%= user.name %></div>
     </li>
   <% end %>
 </ul>
+
+<%= will_paginate %>

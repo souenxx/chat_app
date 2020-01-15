@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user&&user.authenticate(params[:session][:password])
       log_in user
       #return redirect_to session[:callback] if session[:callback].present?
-      redirect_to root_url
+      redirect_to user
     else
       flash.now[:danger]='Invalid email/password combination'
       render 'new'
