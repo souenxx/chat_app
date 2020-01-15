@@ -5,7 +5,11 @@
 <% else %>
   <div class="balloon6">
     <div class="faceicon">
-      <%= image_tag message.user.picture.url %>
+      <% if message.user.picture?>
+        <%= image_tag message.user.picture.url %>
+      <% else %>
+        <%= image_tag "ahiru.png" %>
+      <% end %>
     </div>
     <div class="chatting">
       <div class="saysname"><%= message.user.name %></div>
