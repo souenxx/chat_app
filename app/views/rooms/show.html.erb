@@ -1,5 +1,6 @@
   <% if logged_in? %>
     <div class="line-bc">
+    <div id="show_user" data-show_user="<%= current_user.id %>"></div>
       <div id="messages">
         <%= render @messages%>
 　     </div>

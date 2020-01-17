@@ -1,4 +1,4 @@
-<% if current_user.id == message.user_id %>
+<% if current_user == message.user %>
   <div class="mycomment">
     <p><%= message.content %></p>
   </div>
