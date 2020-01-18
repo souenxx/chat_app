@@ -28,7 +28,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -43,7 +43,7 @@ Rails.application.configure do
   # config.action_cable.mount_path = nil
   #config.action_cable.url = 'wss://souen-chatapp.herokuapp.com/cable'
   #config.action_cable.allowed_request_origins = [ 'http://souen-chatapp.herokuapp.com/', 'http://souen-chatapp.herokuapp.com/' ]
-  config.action_cable.allowed_request_origins = [ /http?:\/\/.*/ ]
+  config.action_cable.allowed_request_origins = [ /http:\/\/.*/ ]
 
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
@@ -79,8 +79,8 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Use a different logger for distributed setups.
-  # require 'syslog/logger'
-  # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
+  #require 'syslog/logger'
+  #config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
