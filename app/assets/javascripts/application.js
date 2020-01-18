@@ -15,5 +15,5 @@
 //= require jquery.turbolinks
 //= require bootstrap
 //= require rails-ujs
-
+//= require cable.js
 //= require_tree .
