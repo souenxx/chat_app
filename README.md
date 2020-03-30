@@ -7,6 +7,7 @@ ActionCableを使用した非同期式のline風チャットアプリです。
 
 ## Demo
 <https://souen-chatapp.herokuapp.com/>
+
 sampleユーザ
  - email: example@example.jp
  - pass: password
