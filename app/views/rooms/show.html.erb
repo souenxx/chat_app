@@ -1,14 +1,8 @@
-  <% if logged_in? %>
+
     <div class="line-bc">
     <div id="show_user" data-show_user="<%= current_user.id %>"></div>
       <div id="messages">
         <%= render @messages%>
 　     </div>
     </div>
-  <% else %>
-    <div class="center jumbotron text-center" style="background-color:#33FF33;">
-      <h1 style="color:white">Chat Appへようこそ</h1>
-      <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-default" %>
-    </div>
 
-  <% end %>

@@ -1,0 +1,20 @@
+<div class="masthead">
+  <div class="container h-100">
+  	<div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+      	<h1 class="font-weight-light">Welcome to ChatApp</h1>
+     	<% unless logged_in? %>
+        <p class="lead">If you haven't registered yet, press the button below.</p>
+    		<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-default" %>
+      <% end %>
+      </div>
+  	</div>
+  </div>
+</div>
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="font-weight-light">Page Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+  </div>
+</section>

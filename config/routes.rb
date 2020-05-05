@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  get 'toppages/index'
+
   get 'sessions/new'
 
   get 'users/new'
 
-  root to: 'rooms#show'
+  root to: 'toppages#index'
+  get '/room', to:'rooms#show'
   get '/signup', to:'users#new'
   post '/signup', to:'users#create'
   get '/login', to:'sessions#new'

@@ -23,6 +23,15 @@ input {
   background: #FFFFFF;
 }
 
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: image-url("maple-leaf-5094046_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Users index 
 .users{
   list-style: none;
