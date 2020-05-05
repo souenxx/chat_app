@@ -36,6 +36,7 @@ gem 'mini_magick','4.7.0'
 gem 'fog-aws'
 gem 'will_paginate','3.1.6'
 gem 'bootstrap-will_paginate','1.0.0'
+gem 'mysql2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -46,7 +47,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
+  #gem 'sqlite3'
+
 end
 
 group :development do
