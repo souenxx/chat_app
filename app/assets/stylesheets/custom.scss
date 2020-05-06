@@ -23,6 +23,7 @@ input {
   background: #FFFFFF;
 }
 
+/* toppage */
 .masthead {
   height: 100vh;
   min-height: 500px;
@@ -30,6 +31,34 @@ input {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#title{
+  margin-top: 180px;
+}
+
+body{
+  padding-top: 30px;
+}
+
+#room{
+  padding-top: 20px;
+}
+
+.cards{
+  height:auto;
+  padding-bottom:40px;
+}
+
+.card-text{
+  display:block;
+}
+
+.text-active{
+  display:block
+}
+
+.contents{
 }
 
 /* Users index 

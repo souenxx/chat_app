@@ -1,7 +1,7 @@
 <div class="masthead">
   <div class="container h-100">
   	<div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center" id="title">
       	<h1 class="font-weight-light">Welcome to ChatApp</h1>
      	<% unless logged_in? %>
         <p class="lead">If you haven't registered yet, press the button below.</p>
@@ -12,9 +12,162 @@
   </div>
 </div>
 
-<section class="py-5">
-  <div class="container">
-    <h2 class="font-weight-light">Page Content</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+
+<div class="container cards">
+
+  <!-- Page Heading -->
+  <h1 class="my-4">Latest Fashion
+    <!--<small>Secondary Text</small>-->
+  </h1>
+
+
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="/images/shinbun_newspaper_english.png" width="200" height="200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">News</a>
+          </h4>
+          <p class="card-text">本日公開された様々なニュースを紹介しています。</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="/images/smartphone_app.png" width="200" height="200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">App</a>
+          </h4>
+          <p class="card-text">AppStoreとGoogleプレイストアで最近ダウンロード数が多いアプリ上位10件を紹介します。</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="#" class="card-img"><img class="card-img-top" src="images/entertainment_music.png" width="200" height="200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Music</a>
+          </h4>
+          <p class="card-text">iTunesで最近ダウンロード数が多い邦楽、洋楽を紹介します。</p>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+</div>
+
+
+<div class="container">
+
+
+
+  <div class="row">
+  <h2>News Contents</h2>
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/200x200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project One</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/200x200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project Two</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/200x200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project Three</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/200x200" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project Four</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container contents">
+  <div class="row">
+    <h2>Music Contents</h2>
+    <div class="container col-lg-6">
+      <h3 class="font-weight-light">邦楽</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+      <ul>
+        <li>aaaaa</li>
+        <li>bbbbb</li>
+        <li>ccccc</li>
+        <li>aaaaa</li>
+        <li>bbbbb</li>
+        <li>ccccc</li>
+        <li>aaaaa</li>
+        <li>bbbbb</li>
+        <li>ccccc</li>
+        <li>ccccc</li>
+      </ul>
+    </div>
+    <div class="container col-lg-6">
+      <h3 class="font-weight-light">洋楽</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>App Contents</h2>
+    <div class="container col-lg-6">
+      <h3 class="font-weight-light">AppleStore</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+      <ul>
+        <li>aaaaa</li>
+        <li>bbbbb</li>
+        <li>ccccc</li>
+        <li>aaaaa</li>
+        <li>bbbbb</li>
+        <li>ccccc</li>
+        <li>aaaaa</li>
+        <li>bbbbb</li>
+        <li>ccccc</li>
+        <li>ccccc</li>
+      </ul>
+    </div>
+    <div class="container col-lg-6">
+      <h3 class="font-weight-light">GoogleplayStore</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('.card').hover(
+  function(){
+    $(this).find('.card-text').addClass('text-active')
+  },
+  function(){
+    $(this).find('.card-text').removeClass('text-active')
+  });
+</script>
