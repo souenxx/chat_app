@@ -12,131 +12,100 @@
   </div>
 </div>
 
-
 <div class="container cards">
-
   <!-- Page Heading -->
   <h1 class="my-4">Latest Fashion
     <!--<small>Secondary Text</small>-->
   </h1>
-
-
   <div class="row">
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="/images/shinbun_newspaper_english.png" width="200" height="200" alt=""></a>
+        <a class="scroll-btn" href="#news"><img class="card-img-top" src="/images/shinbun_newspaper_english.png" width="200" height="200" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">News</a>
+            <a class="scroll-btn" href="#news">News</a>
           </h4>
           <p class="card-text">本日公開された様々なニュースを紹介しています。</p>
         </div>
       </div>
     </div>
+
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="/images/smartphone_app.png" width="200" height="200" alt=""></a>
+        <a class="scroll-btn" href="#app"><img class="card-img-top" src="/images/smartphone_app.png" width="200" height="200" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">App</a>
+            <a class="scroll-btn" href="#app">App</a>
           </h4>
           <p class="card-text">AppStoreとGoogleプレイストアで最近ダウンロード数が多いアプリ上位10件を紹介します。</p>
         </div>
       </div>
     </div>
+
     <div class="col-lg-4 col-sm-6 mb-4">
       <div class="card h-100">
-        <a href="#" class="card-img"><img class="card-img-top" src="images/entertainment_music.png" width="200" height="200" alt=""></a>
+        <a class="scroll-btn" href="#music"><img class="card-img-top" src="images/entertainment_music.png" width="200" height="200" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Music</a>
+            <a class="scroll-btn" href="#music">Music</a>
           </h4>
           <p class="card-text">iTunesで最近ダウンロード数が多い邦楽、洋楽を紹介します。</p>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
 
-<div class="container">
-
-
+<div class="container" id="news">
 
   <div class="row">
   <h2>News Contents</h2>
     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/200x200" alt=""></a>
+        <a href="#"><img class="card-img-top" src=<%= @image0 %> height="200" width="200" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Project One</a>
+            <a href="#"><%= @title0 %></a>
           </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
         </div>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/200x200" alt=""></a>
+        <a href="#"><img class="card-img-top" src=<%= @image1 %> height="200" width="200" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Project Two</a>
+            <a href="#"><%= @title1 %></a>
           </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
         </div>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/200x200" alt=""></a>
+        <a href="#"><img class="card-img-top" src=<%= @image2 %> height="200" width="200" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Project Three</a>
+            <a href="#"><%= @title2 %></a>
           </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
         </div>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/200x200" alt=""></a>
+        <a href="#"><img class="card-img-top" src=<%= @image3 %> height="200" width="200" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">Project Four</a>
+            <a href="#"><%= @title3 %></a>
           </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container contents">
-  <div class="row">
-    <h2>Music Contents</h2>
-    <div class="container col-lg-6">
-      <h3 class="font-weight-light">邦楽</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-      <ul>
-        <li>aaaaa</li>
-        <li>bbbbb</li>
-        <li>ccccc</li>
-        <li>aaaaa</li>
-        <li>bbbbb</li>
-        <li>ccccc</li>
-        <li>aaaaa</li>
-        <li>bbbbb</li>
-        <li>ccccc</li>
-        <li>ccccc</li>
-      </ul>
-    </div>
-    <div class="container col-lg-6">
-      <h3 class="font-weight-light">洋楽</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-    </div>
-  </div>
-
+<div class="container contents" id="app">
   <div class="row">
     <h2>App Contents</h2>
     <div class="container col-lg-6">
@@ -162,12 +131,46 @@
   </div>
 </div>
 
+<div class="container contents" id="music">
+  <div class="row">
+    <h2>Music Contents</h2>
+    <div class="container col-lg-6">
+      <h3 class="font-weight-light">邦楽</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+      <ul>
+        <li>aaaaa</li>
+        <li>bbbbb</li>
+        <li>ccccc</li>
+        <li>aaaaa</li>
+        <li>bbbbb</li>
+        <li>ccccc</li>
+        <li>aaaaa</li>
+        <li>bbbbb</li>
+        <li>ccccc</li>
+        <li>ccccc</li>
+      </ul>
+    </div>
+    <div class="container col-lg-6">
+      <h3 class="font-weight-light">洋楽</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+    </div>
+  </div>
+</div>
+
 <script type="text/javascript">
   $('.card').hover(
   function(){
-    $(this).find('.card-text').addClass('text-active')
+    $(this).find('.card-text').addClass('text-active');
   },
   function(){
-    $(this).find('.card-text').removeClass('text-active')
+    $(this).find('.card-text').removeClass('text-active');
   });
+  $('.scroll-btn').click(function(){
+    var id = $(this).attr('href');
+    var position = $(id).offset().top-30;
+    $('html,head').animate({
+      'scrollTop':position
+    },500)
+  });
+
 </script>

@@ -37,6 +37,7 @@ gem 'fog-aws'
 gem 'will_paginate','3.1.6'
 gem 'bootstrap-will_paginate','1.0.0'
 gem 'mysql2'
+gem 'nokogiri'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
