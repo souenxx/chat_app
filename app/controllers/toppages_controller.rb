@@ -27,6 +27,7 @@ class ToppagesController < ApplicationController
   	@image2=/"/.match(imagelist[3]).post_match
   	@image3=/"/.match(imagelist[4]).post_match
 
+  	
 
   end
 end
